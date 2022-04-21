@@ -4,8 +4,13 @@
 
 <script>
     export default {
-        name: "Me"
+        name: "Me",
+         created() {
+    console.log(this.$route.params.jum)
+    console.log(this.$route.params.id)
+  }
     }
+    
 </script>
 
 <style scoped>

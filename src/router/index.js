@@ -16,7 +16,8 @@ const routes = [
     redirect: '/home'
   },
   {
-    path: '/home',
+    path: '/home/:jum/:id',
+    
     // 指定的组件
     component:Home
   },
@@ -29,7 +30,11 @@ const routes = [
     component:Cart
   },
   {
-    path: '/me',
+    path: '/me/:jum/:id',
+    params:{
+      jum:'你好',
+      id:'nh'
+    },
     component:Me
   },
   {
